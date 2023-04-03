@@ -1,4 +1,5 @@
 {
+  "homepage": "https://subhadipbhowmik.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -21,6 +22,8 @@
   },
   "scripts": {
     "start": "craco --openssl-legacy-provider start",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
@@ -44,6 +47,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/helper-compilation-targets": "^7.21.4"
+    "@babel/helper-compilation-targets": "^7.21.4",
+    "gh-pages": "^5.0.0"
   }
 }
